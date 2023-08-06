@@ -25,6 +25,14 @@
     </div>
   </section>
   <br>
+  <mat-card class="header-card">
+    <mat-card-title style="font-size: x-large; font-family: fantasy; color: steelblue;">
+      National Level <br> Open Hackathon
+    </mat-card-title>
+    <mat-card-subtitle>
+      26 - 27 September 2023
+    </mat-card-subtitle>
+  </mat-card>
   <div class="nav-btn">
     <div style="border-bottom: inset">
       <!-- <button mat-button routerLink="#sponsors" (click)="scrollToSection('sponsors')">
@@ -47,9 +55,12 @@
         <mat-icon matPrefix>help_outline</mat-icon> FAQ
       </button>
 
-      <button mat-button routerLink="#apply" (click)="scrollToSection('apply')">
-        <mat-icon matPrefix>assignment_turned_in</mat-icon> Apply
+      <button mat-button routerLink="#contact" (click)="scrollToSection('contact')">
+        <mat-icon matPrefix>perm_contact_calendar </mat-icon> Contact
       </button>
+      <!-- <button mat-button routerLink="#apply" (click)="scrollToSection('apply')">
+        <mat-icon matPrefix>assignment_turned_in</mat-icon> Apply
+      </button> -->
       <button mat-button routerLink="#venue" (click)="scrollToSection('venue')">
         <mat-icon matPrefix>share_location </mat-icon> venue
       </button>
@@ -59,18 +70,25 @@
 
 
   <mat-card class="count-down-timer" style="text-align: center;">
-    <mat-card-header>
-      <h2 >Last Date : Sep 15 2023  <mat-icon>alarm</mat-icon> </h2>
-    </mat-card-header>
+    <h1 style="color: steelblue; margin: 0; "> <b>
+
+      Register Before <i class="fa-solid fa-clock fa-spin"></i>
+      </b>
+    </h1>
+  
+
     <mat-card-content>
       <div class="wrapper">
+        <h2>
+          Sep 15 2023 
+        </h2>
         <div class="description">
           <p>{{ days }} days</p>
           <p>{{ hours }} hours</p>
           <p>{{ minutes }} minutes</p>
           <p>{{ seconds }} seconds</p>
         </div>
-        <div class="times">
+        <!-- <div class="times">
           <mat-progress-bar [value]="days" max="30" style="width: 100%; height: 2rem; margin-left: 0">
             <span>{{ days }}</span>
           </mat-progress-bar>
@@ -84,24 +102,17 @@
           <mat-progress-bar [value]="seconds" max="60" style="width: 100%; height: 2rem">
             <span>{{ seconds }}</span>
           </mat-progress-bar>
-        </div>
+        </div> -->
       </div>
     </mat-card-content>
   </mat-card>
+  <br>
   <div class="header">
-    <h2>Prize</h2>
+    <h2>🏆 Prize 🏆</h2>
   </div>
   <br>
   <div class="block-container">
-
-
     <mat-card class="block">
-      <h3>2nd Prize</h3>
-      <p>21,000 ₹</p>
-      <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-second-place-medal-4631462-3854351.png"
-        alt="Second prize OIST Hackathon">
-    </mat-card>
-    <mat-card class="block" style="top: -20px;">
       <h3>1st Prize</h3>
       <p>51,000 ₹</p>
       <!-- <img src="https://static.vecteezy.com/system/resources/previews/008/854/767/original/3d-first-winner-medal-icon-illustration-png.png" alt="First prize OIST Hackathon"> -->
@@ -110,15 +121,26 @@
         alt="First prize OIST Hackathon">
 
     </mat-card>
+
     <mat-card class="block">
-      <h3>3rd Prize</h3>
-      <p>xxxxx ₹</p>
-      <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-third-place-medal-4631463-3854352.png"
-        alt="Third prize OIST Hackathon">
+      <h3>Runner Up</h3>
+      <p>21,000 ₹</p>
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/009/312/979/original/3d-star-medal-icon-illustration-png.png"
+        alt="Second prize OIST Hackathon">
     </mat-card>
+
+
   </div>
 
 
+  <br>
+  <section id="apply" class="apply">
+    <a href="https://i.ibb.co/7z65YT6/947b874e-d38a-4a67-9b0a-3c2a4b207a2f.jpg">
+      <button class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> Apply Now <i
+          class="fa-solid fa-bars-staggered"></i> </button>
+    </a>
+  </section>
 
 
 
@@ -143,12 +165,33 @@
   <section id="theme">
     <app-theme></app-theme>
   </section>
+  <section id="contact">
+    <div class="header">
+      <h2>Contact</h2>
+    </div>
+    <mat-card style="width: 80%; max-width: 500px; margin: auto; text-align: center;">
+      <mat-card-title>
+        Important contacts
+      </mat-card-title>
+      <mat-card-subtitle>
+        Student cordinators - .....................................
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        Faculty cordinators - .........................................
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        Hostel Booking - .........................................
+      </mat-card-subtitle>
+    </mat-card>
+  </section>
+  <br>
   <section id="faq">
     <app-faq></app-faq>
   </section>
-  <section id="apply">
+
+  <!-- <section id="apply">
     <app-apply></app-apply>
-  </section>
+  </section> -->
   <section id="venue">
     <div class="header" id="venue">
       <h2>Event Venue</h2>
@@ -192,5 +235,6 @@
       <p><a href="https://blackrindustries.weebly.com/" style="color: #ffd800; text-decoration: none;">BlackR Industries
           <sup>©</sup></a></p>
     </div>
+    <br><br><br>
   </footer>
 </main>

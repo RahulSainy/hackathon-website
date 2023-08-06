@@ -20,6 +20,13 @@ mat-sidenav {
     -webkit-text-stroke-color: steelblue;
     stroke: #ffffff;
   }
+  .header-card{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background: #ede7f6;
+    max-width: 400px;
+  }
   #intro {
     width: 100%;
     background: linear-gradient(rgba(7, 10, 16, 15%), rgb(6 3 0)), url('https://gyaanarth.com/wp-content/uploads/2022/07/1549731403759.jpg');
@@ -102,10 +109,23 @@ mat-sidenav {
       margin-bottom: 2%;
     }
   
-    .glowing-btn {
-      margin-top: 1%;
-      max-width: 80%;
-    }
+  }
+  
+  .apply {
+  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 20px 0 0 0;
+    z-index: 1000;
+  }
+  
+  .apply-btn {
+    top: -10px;
+    padding: 2rem;
+    font-size: x-large;
   }
   
   /* ------------------------------------------------- */
@@ -278,6 +298,11 @@ mat-sidenav {
   .count-down-timer {
     margin: 20px;
   }
+  .apply-btn {
+    padding: 1rem;
+    font-size: large;
+    top: -10px;}
+
 }
 
   

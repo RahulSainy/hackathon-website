@@ -18,7 +18,9 @@
     gap: 20px;
     flex-wrap: wrap;
   }
-  
+  .mat-mdc-card-header {
+    display: block;}
+
   @media screen and (max-width: 600px) {
     .theme-container {
       flex-wrap: no-wrap;
@@ -28,14 +30,26 @@
   
   .theme-card {
     max-width: 300px;
+    text-align: center;
+
+    /* max-width: 47% */
   }
   img{
     height: -webkit-fill-available
   }
-  
+  .mdc-card__actions{
+justify-content: center
+  }
   @media screen and (max-width: 480px) {
+    .mat-mdc-card-header {
+      display: block;
+      padding: 0;
+    }
     .theme-card {
-      max-width: 200px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      max-width: 47%
     }
   }
   
