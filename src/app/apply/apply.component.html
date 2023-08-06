@@ -1,0 +1,96 @@
+<mat-horizontal-stepper [linear]="true" [formGroup]="teamForm">
+  <!-- Step 1 -->
+  <mat-step>
+    <ng-template matStepLabel>Team Leader Details</ng-template>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Team Leader Name</mat-label>
+        <input matInput formControlName="teamLeaderName" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="contactNumber" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email ID</mat-label>
+        <input matInput formControlName="email" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Semester</mat-label>
+        <input matInput formControlName="semester" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="department" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>College Name</mat-label>
+        <input matInput formControlName="collegeName" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <!-- Step 2 -->
+  <mat-step>
+    <ng-template matStepLabel>Other 3 Team Members</ng-template>
+    <div formArrayName="teamMembers">
+      <div *ngFor="let member of teamMembers.controls; let i = index">
+        <div [formGroupName]="i">
+          <mat-form-field appearance="outline">
+            <mat-label>Team Member Name {{ i + 1 }}</mat-label>
+            <input matInput formControlName="name" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Team Member Number {{ i + 1 }}</mat-label>
+            <input matInput formControlName="number" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Team Member College Name {{ i + 1 }}</mat-label>
+            <input matInput formControlName="collegeName" required>
+          </mat-form-field>
+
+          <button mat-icon-button color="warn" (click)="removeTeamMember(i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+    <button mat-raised-button color="primary" (click)="addTeamMember()">Add Team Member</button>
+    <button mat-raised-button color="primary" matStepperNext>Next</button>
+  </mat-step>
+
+  <!-- Step 3 -->
+  <mat-step>
+    <ng-template matStepLabel>Mentor Details</ng-template>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Mentor Name</mat-label>
+        <input matInput formControlName="mentorName" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Mentor Number</mat-label>
+        <input matInput formControlName="mentorNumber" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Payment ID (after paying to QR)</mat-label>
+        <input matInput formControlName="paymentId" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+      <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

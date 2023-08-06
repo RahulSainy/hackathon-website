@@ -1,0 +1,41 @@
+.header h2{
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #6EC1E400;
+    letter-spacing: 4.01px;
+    -webkit-text-stroke-width: 3px;
+    stroke-width: 11px;
+    -webkit-text-stroke-color: steelblue;
+    stroke: #ffffff;
+}
+.theme-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .theme-container {
+      flex-wrap: no-wrap;
+      gap: 10px;
+    }
+  }
+  
+  .theme-card {
+    max-width: 300px;
+  }
+  img{
+    height: -webkit-fill-available
+  }
+  
+  @media screen and (max-width: 480px) {
+    .theme-card {
+      max-width: 200px;
+    }
+  }
+  

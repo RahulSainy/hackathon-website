@@ -1,0 +1,47 @@
+
+
+.sectionsponsor-header h2 {
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: #6EC1E400;
+  letter-spacing: 4.01px;
+  -webkit-text-stroke-width: 3px;
+  stroke-width: 11px;
+  -webkit-text-stroke-color: steelblue;
+  stroke: #ffffff;
+
+
+}
+/* Styling for the sponsors section header */
+.sectionsponsor-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the sponsor cards container */
+  .sponsors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 16px;
+    justify-items: center;
+  }
+  
+  /* Styling for each sponsor card */
+  .sponsor-card {
+    /* width: 100%; */
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sponsor-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  

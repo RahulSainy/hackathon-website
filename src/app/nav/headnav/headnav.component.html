@@ -1,0 +1,53 @@
+<!-- tollbar for lg screens         -->
+
+<!-- ************************ 786 px nav issue solve ****************************************** -->
+
+<mat-toolbar class="toolbar" color="primary">
+  <!--add this below ----  fxHide.gt-sm="" -->
+  <div class="button" fxHide.gt-sm="">
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>widgets</mat-icon>
+    </button>
+  </div>
+
+  <!-- header logo if we like add image thorugh css  -->
+  <!-- <div  routerLink="" mat-card-avatar class="header-image"></div> -->
+  <div routerLink="" class="logo">
+    <h1>
+ < Oriental Hackathon >
+    </h1>
+  </div>
+
+
+    <section fxHide.lt-sm="">
+   
+
+        <button mat-button routerLink="sponsors">
+          <mat-icon matPrefix>supervisor_account</mat-icon> Sponsors
+        </button>
+        
+        <button mat-button routerLink="schedule">
+          <mat-icon matPrefix>event</mat-icon> Schedule
+        </button>
+        
+        <button mat-button routerLink="events">
+          <mat-icon matPrefix>event_note</mat-icon> Events
+        </button>
+        
+        <button mat-button routerLink="theme">
+          <mat-icon matPrefix>palette</mat-icon> Theme
+        </button>
+        
+        <button mat-button routerLink="faq">
+          <mat-icon matPrefix>help_outline</mat-icon> FAQ
+        </button>
+        
+        <button mat-button routerLink="apply">
+          <mat-icon matPrefix>assignment_turned_in</mat-icon> Apply
+        </button>
+        
+    </section>
+
+   
+
+</mat-toolbar>

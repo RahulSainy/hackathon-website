@@ -1,0 +1,83 @@
+
+
+.header h2{
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #6EC1E400;
+    letter-spacing: 4.01px;
+    -webkit-text-stroke-width: 3px;
+    stroke-width: 11px;
+    -webkit-text-stroke-color: steelblue;
+    stroke: #ffffff;
+}
+
+/* apply.component.css */
+
+/* Center the form on the page */
+mat-horizontal-stepper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add some spacing between form fields */
+mat-form-field {
+  margin-bottom: 20px;
+}
+
+/* Style the form header */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add styles for the buttons */
+.mat-stepper-horizontal .mat-stepper-header-container {
+  justify-content: center;
+}
+
+.mat-stepper-horizontal .mat-horizontal-stepper-header {
+  flex-direction: column;
+}
+
+.mat-stepper-horizontal .mat-step-header {
+  padding-bottom: 5px;
+}
+
+.mat-step-header mat-icon {
+  margin-right: 5px;
+}
+
+/* Responsive styles for the stepper */
+@media (max-width: 600px) {
+  mat-horizontal-stepper {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .mat-stepper-horizontal .mat-step-header {
+    text-align: center;
+  }
+
+  .mat-stepper-horizontal .mat-step-header mat-icon {
+    margin: 0 auto;
+  }
+}
+
+/* Responsive styles for the team members' input fields */
+@media (max-width: 600px) {
+  .team-member-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) {
+  .team-member-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
