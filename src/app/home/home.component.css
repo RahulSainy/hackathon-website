@@ -81,7 +81,7 @@ mat-sidenav {
   .venue-map {
     display: flex;
     align-items: center;
-    margin-bottom: 15%;
+    /* margin-bottom: 15%; */
   }
   
   iframe {
@@ -113,13 +113,16 @@ mat-sidenav {
   
   .apply {
   
-    position: fixed;
+    top: -10px;
+    font-size: x-large;
+    bottom: -height;
+    z-index: 1001;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     margin: 20px 0 0 0;
-    z-index: 1000;
   }
   
   .apply-btn {
@@ -127,21 +130,26 @@ mat-sidenav {
     padding: 2rem;
     font-size: x-large;
   }
-  
+  .header-image{
+    display: none;
+   width: 100%;
+  }
   /* ------------------------------------------------- */
   
-  .footercontainer {
+  /* .footercontainer {
     background-color: #fcfcfc4f;
     color: #fff;
     padding: 20px 0;
-  }
+  } */
   
   .nav-btn {
     padding: 16px;
     text-align: center;
     margin: auto;
   }
-
+.nav-btn mat-icon{
+color: steelblue;
+}
   /* ------------------- prizez --------------------  */
  .block-container {
   display: flex;
@@ -155,7 +163,7 @@ mat-sidenav {
 .block-container p {
 
   font-size: large;
-    font-family: cursive;
+    /* font-family: cursive; */
     color: #673AB7;
     animation: money 5s infinite;
 
@@ -302,7 +310,8 @@ mat-sidenav {
     padding: 1rem;
     font-size: large;
     top: -10px;}
-
+    .header-image{
+      display: block;}
 }
 
   

@@ -1,4 +1,5 @@
 <main>
+  <img class="header-image"  src="https://oistbpl.com/images/oist-logo-1.png" alt="">
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <a href="https://oistbpl.com/">
@@ -83,10 +84,10 @@
           Sep 15 2023 
         </h2>
         <div class="description">
-          <p>{{ days }} days</p>
-          <p>{{ hours }} hours</p>
-          <p>{{ minutes }} minutes</p>
-          <p>{{ seconds }} seconds</p>
+          <p>{{ days }} <br>days</p>
+          <p>{{ hours }} <br>hours</p>
+          <p>{{ minutes }} <br>min</p>
+          <p>{{ seconds }} <br>sec</p>
         </div>
         <!-- <div class="times">
           <mat-progress-bar [value]="days" max="30" style="width: 100%; height: 2rem; margin-left: 0">
@@ -132,15 +133,15 @@
 
 
   </div>
+  <mat-card class="count-down-timer" style="text-align: center;">
+    <h1 style="color: steelblue; margin: 0; "> <b>
 
-
-  <br>
-  <section id="apply" class="apply">
-    <a href="https://i.ibb.co/7z65YT6/947b874e-d38a-4a67-9b0a-3c2a4b207a2f.jpg" target="_top">
-      <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> Apply Now <i
-          class="fa-solid fa-bars-staggered"></i> </button>
-    </a>
-  </section>
+      Scholarship  <i class="fa-solid fa-graduation-cap"></i>
+      </b>
+    </h1>
+    <h1>Up to 1,00,000 ₹</h1>
+</mat-card>
+ 
 
 
 
@@ -165,7 +166,7 @@
   <section id="theme">
     <app-theme></app-theme>
   </section>
-  <section id="contact">
+  <section id="contact" style="padding:20px 0 30px 0; ">
     <div class="header">
       <h2>Contact</h2>
     </div>
@@ -173,26 +174,30 @@
       <mat-card-title>
         Important contacts
       </mat-card-title>
-      <mat-card-subtitle>
-        Student cordinators - .....................................
-      </mat-card-subtitle>
-      <mat-card-subtitle>
-        Faculty cordinators - .........................................
-      </mat-card-subtitle>
-      <mat-card-subtitle>
-        Hostel Booking - .........................................
-      </mat-card-subtitle>
+      <i class="fa-solid fa-chalkboard-user"></i>
+      <p>
+        Student cordinators 
+        <br> - .....................................
+      </p><i class="fa-solid fa-person-chalkboard"></i>
+      <p>
+        Faculty cordinators 
+        <br>- .........................................
+      </p><i class="fa-solid fa-hotel"></i>
+      <p>
+        Hostel Booking
+        <br> - .........................................
+      </p>
     </mat-card>
   </section>
   <br>
-  <section id="faq">
+  <section id="faq" style="padding:20px 0 30px 0; ">
     <app-faq></app-faq>
   </section>
 
   <!-- <section id="apply">
     <app-apply></app-apply>
   </section> -->
-  <section id="venue">
+  <section id="venue" style="padding:20px 0 30px 0; ">
     <div class="header" id="venue">
       <h2>Event Venue</h2>
       <p style="text-align: center;" class="mb-4 pb-0">Oriental Institute Of Science And Technology, Raisen Rd, opp.
@@ -205,7 +210,13 @@
         frameborder="0" style="border: 0" allowfullscreen></iframe>
     </div>
   </section>
-
+  <br>
+  <section id="apply" class="apply">
+    <a href="https://i.ibb.co/7z65YT6/947b874e-d38a-4a67-9b0a-3c2a4b207a2f.jpg" target="_top">
+      <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> Apply Now <i
+          class="fa-solid fa-bars-staggered"></i> </button>
+    </a>
+  </section>
   <ng-adsense
   [adClient]="'ca-pub-7689491302137996'"
   [adSlot]="2302512209"
@@ -213,36 +224,5 @@
   [width]="320"
   [height]="108"
 ></ng-adsense>
-  <footer class="footercontainer text-white py-3">
-    <!-- <div class="container">
-         <div class="row">
-           <div class="col-md-6">
-             <a href="https://blackrindustries.weebly.com/">
-               <h2 class="mb-0">Contact Us</h2>
-             </a>
-           </div>
-         </div> -->
 
-    <!-- <div class="col-md-6"> -->
-    <!-- Add the form here using Angular Material components -->
-    <!-- <div class="row mt-3">
-               <div class="col-md-6">
-                 <form (ngSubmit)="onSubmit()">
-                   <div class="mb-3">
-                     <input type="text" class="form-control" id="name" placeholder="Full Name" [(ngModel)]="name" name="name" required>
-                   </div>
-                   <div class="mb-3">
-                     <input type="text" class="form-control" id="email" placeholder="Email / Phone No" [(ngModel)]="email" name="email" required>
-                   </div>
-                   <div class="mb-3">
-                     <textarea type="text" class="form-control" id="comments" placeholder="comments" [(ngModel)]="comments" name="comments"></textarea>
-                   </div>
-                   <button type="submit" class="btn btn-secondary">Send</button>
-                 </form> -->
-    <div class="col-md-6 text-md-end">
-      <p><a href="https://blackrindustries.weebly.com/" style="color: #ffd800; text-decoration: none;">BlackR Industries
-          <sup>©</sup></a></p>
-    </div>
-    <br><br><br>
-  </footer>
 </main>
