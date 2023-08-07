@@ -16,11 +16,11 @@ import { SidenavComponent } from './nav/sidenav/sidenav.component';
 import { HeadnavComponent } from './nav/headnav/headnav.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ThemeDialogComponent } from './theme/theme-dialog.component';
+import { AdsenseModule } from 'ng2-adsense';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -44,6 +44,10 @@ import { ThemeDialogComponent } from './theme/theme-dialog.component';
     FormsModule,
     MaterialModule,
     HttpClientModule,
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-7689491302137996',
+    }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

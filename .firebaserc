@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "oisthackathon"
+  },
+  "targets": {
+    "oisthackathon": {
+      "hosting": {
+        "hackathon-website": [
+          "oisthackathon"
+        ]
+      }
+    }
   }
 }
