@@ -2,25 +2,18 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "hosting": [
-    {
-      "public": "dist/hackathon-website",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "hackathon-website",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
+  "hosting": {
+    "public": "dist/hackathon-website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }

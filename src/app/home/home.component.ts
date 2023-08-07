@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var gtag:any
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -26,7 +26,12 @@ export class HomeComponent implements OnInit{
     }, 1000);
   }
 
-
+  trackMe() {
+    gtag('event', 'APPLY_BUTTON_CLICKED', {
+    'event_category': 'BUTTON_CLICK',
+    'event_label': 'Apply Me Click',
+    'value': true })
+    }
   scrollToSection(sectionId: string): void {
     const section = document.getElementById(sectionId);
     if (section) {
