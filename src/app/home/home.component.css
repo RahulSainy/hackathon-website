@@ -113,7 +113,7 @@ mat-sidenav {
   
   .apply {
   
-    top: -10px;
+    top: 15px;
     font-size: x-large;
     bottom: -height;
     z-index: 1001;
