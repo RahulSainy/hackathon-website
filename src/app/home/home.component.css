@@ -165,8 +165,8 @@ color: steelblue;
   font-size: large;
     /* font-family: cursive; */
     color: #673AB7;
+    font-weight: bold;
     animation: money 5s infinite;
-
 }
 
 @keyframes money {
@@ -310,6 +310,9 @@ color: steelblue;
     padding: 1rem;
     font-size: large;
     top: -10px;}
+    .header h2{
+      font-size: x-large;
+    }
     .header-image{
       display: block;}
 }

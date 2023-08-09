@@ -53,3 +53,9 @@ justify-content: center
     }
   }
   
+@media screen and (max-width: 430px) {
+
+  .header h2 {
+    font-size: x-large;
+  }
+}
