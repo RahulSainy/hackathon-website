@@ -36,7 +36,7 @@
   </mat-card>
   <div class="nav-btn">
     <div style="border-bottom: inset; border-top: outset; ">
-      
+
       <!-- <button mat-button routerLink="#sponsors" (click)="scrollToSection('sponsors')">
          <mat-icon matPrefix>supervisor_account</mat-icon> Sponsors
        </button> -->
@@ -113,15 +113,24 @@
     </mat-card-content>
   </mat-card>
   <br>
+
   <div class="header">
     <h2>🏆 Prize 🏆</h2>
   </div>
   <br>
-  <div class="block-container">
+  <div class="prize-container">
+    <div class="prize-image">
+      <img src="https://i.ibb.co/pK9yPYV/First-Prize.png" alt="First Prize" border="0" class="First-Prize">
+    </div>
+    
+    <div class="prize-image">
+      <img src="https://i.ibb.co/8jgrG0B/Second-Prize.png" alt="Second Prize" border="0" class="Second-Prize" style="float: right;">
+    </div>
+  </div>
+  <!-- <div class="block-container">
     <mat-card class="block">
       <h3>1st Prize</h3>
       <p style="font-size: xx-large;">51,000 ₹</p>
-      <!-- <img src="https://static.vecteezy.com/system/resources/previews/008/854/767/original/3d-first-winner-medal-icon-illustration-png.png" alt="First prize OIST Hackathon"> -->
       <img
         src="https://static.vecteezy.com/system/resources/previews/008/854/754/original/3d-first-winner-medal-icon-illustration-png.png"
         alt="First prize OIST Hackathon">
@@ -137,15 +146,19 @@
     </mat-card>
 
 
-  </div>
-  <mat-card class="count-down-timer" style="text-align: center;">
-    <h1 style="color: steelblue; margin: 0; "> <b>
+  </div> -->
+ 
+
+
+    <mat-card class="count-down-timer" style="text-align: center;">
+      <h1 style="color: steelblue; margin: 0; "> <b>
 
         Scholarship <i class="fa-solid fa-graduation-cap"></i>
       </b>
     </h1>
     <h1>Up to 1,00,000 ₹</h1>
   </mat-card>
+
 
 
 
@@ -175,27 +188,51 @@
     <div class="header">
       <h2>Contact</h2>
     </div>
-    <mat-card style="width: 80%; max-width: 500px; margin: auto; text-align: center;">
+    <mat-card style="width: 80%; max-width: 600px; margin: auto; text-align: center;">
       <mat-card-title>
-        Important contacts
+        Important Contacts
       </mat-card-title>
-      <i class="fa-solid fa-chalkboard-user"></i>
-      <p>
-        Student cordinators
-        <br> - .....................................
-      </p><i class="fa-solid fa-person-chalkboard"></i>
-      <p>
-        Faculty cordinators
-        <br>- .........................................
-      </p><i class="fa-solid fa-hotel"></i>
-      <p>
-        Hostel Booking
-        <br> - .........................................
-      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-chalkboard-user fa-2x"></i>
+              </div>
+              <h4 class="card-title mt-3">Student Coordinators</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let contact of contacts">
+                  <h4 class="list-group-item-heading">{{contact.name}}</h4>
+                  <p class="list-group-item-text">{{contact.phone}}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-person-chalkboard fa-2x"></i>
+              </div>
+              <h4 class="card-title mt-3">Faculty Coordinators</h4>
+              <p class="card-text">- To be added soon -</p>
+              <div class="d-flex justify-content-center mt-3">
+                <i class="fa-solid fa-hotel fa-2x"></i>
+              </div>
+              <h4 class="card-title">Hostel Booking</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">0755-2529026</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </mat-card>
+
   </section>
   <br>
-  
+
 
   <!-- <section id="apply">
     <app-apply></app-apply>
@@ -217,38 +254,55 @@
     <app-faq></app-faq>
   </section>
   <br>
-  
 
-  <section id="about-us"class="header">  <h2>About Us</h2>
-    <mat-card style="width: 90%; margin: auto;" >
-    
 
-     
+  <section id="about-us" class="header">
+    <h2>About Us</h2>
+    <mat-card style="width: 90%; margin: auto;">
+
+
+
       <mat-card-content>
-       
-       <p><b>  <h1 style="display: inline;"> <b> Oriental Group</b></h1> </b> is a center of opportunity for students, academicians, and researchers who want to build a successful career.
-          Our directors enjoy the highest salary packages in Central India, and our faculty members are paid above the AICTE full scale, with HRA/Accommodation facilities, LTC, local transport, and assured promotion policy with a number of performance-linked incentives.
+
+        <p><b>
+            <h1 style="display: inline;"> <b> Oriental Group</b></h1>
+          </b> is a center of opportunity for students, academicians, and researchers who want to build a successful
+          career.
+          Our directors enjoy the highest salary packages in Central India, and our faculty members are paid above the
+          AICTE full scale, with HRA/Accommodation facilities, LTC, local transport, and assured promotion policy with a
+          number of performance-linked incentives.
         </p>
         <p>
-          Oriental Group of Institutes was started by the founder Chairman Dr. KL Thakral in 1995. We are a self-financed premier educational group imparting quality education in the disciplines of Engineering, Pharmacy, Management, and Advanced Computer Studies. We have colleges in Bhopal, Indore, and Jabalpur, and we have a significant presence in the Central region. We also have a private university, Oriental University, in Indore.
+          Oriental Group of Institutes was started by the founder Chairman Dr. KL Thakral in 1995. We are a
+          self-financed premier educational group imparting quality education in the disciplines of Engineering,
+          Pharmacy, Management, and Advanced Computer Studies. We have colleges in Bhopal, Indore, and Jabalpur, and we
+          have a significant presence in the Central region. We also have a private university, Oriental University, in
+          Indore.
         </p>
         <p>
-          Our vision is to become a “Centre of Excellence” with emphasis on quality teaching and research so as to deliver comprehensively trained, innovative engineers and enterprising, competent professionals, who are ethically responsible to serve the society.
+          Our vision is to become a “Centre of Excellence” with emphasis on quality teaching and research so as to
+          deliver comprehensively trained, innovative engineers and enterprising, competent professionals, who are
+          ethically responsible to serve the society.
         </p>
         <p>
           Here are some of the things that make Oriental Group unique:
-          <ul>
-            <li>Our institutes are the most preferred choice of the successful students of exams/tests of IIT JEE/MAT/Pre-MCA</li>
-            <li>Our CAD/CAM lab is developed as a Centre for Excellence to strengthen research activities in product and development</li>
-            <li>Our Centre for Innovation and Technological Enhancement (CITE) is a para-institutional body providing resources for startups</li>
-            <li>Our students have won numerous awards and honors, including special honors from RGPV, the affiliating University</li>
-            <li>Our students are actively involved in co-curricular and extracurricular activities</li>
-            <li>We have a high placement rate, with more than 80% of our eligible students getting placed</li>
-            <li>We have a strong alumni network, with members working in some of the best organizations in the world</li>
-          </ul>
-  
+        <ul>
+          <li>Our institutes are the most preferred choice of the successful students of exams/tests of IIT
+            JEE/MAT/Pre-MCA</li>
+          <li>Our CAD/CAM lab is developed as a Centre for Excellence to strengthen research activities in product and
+            development</li>
+          <li>Our Centre for Innovation and Technological Enhancement (CITE) is a para-institutional body providing
+            resources for startups</li>
+          <li>Our students have won numerous awards and honors, including special honors from RGPV, the affiliating
+            University</li>
+          <li>Our students are actively involved in co-curricular and extracurricular activities</li>
+          <li>We have a high placement rate, with more than 80% of our eligible students getting placed</li>
+          <li>We have a strong alumni network, with members working in some of the best organizations in the world</li>
+        </ul>
+
         <p>
-          We are proud to be a center of opportunity for so many people. We are committed to providing quality education and research, and we are confident that our graduates will make a positive impact on the world.
+          We are proud to be a center of opportunity for so many people. We are committed to providing quality education
+          and research, and we are confident that our graduates will make a positive impact on the world.
         </p>
         <p>
           <a href="https://oistbpl.com/" target="_blank">Learn more about Oriental Group</a>
@@ -256,14 +310,14 @@
       </mat-card-content>
     </mat-card>
   </section>
-  
+
   <section id="apply" class="apply">
     <a href="https://forms.gle/HBkuoGdZKo5jxANfA" target="_top">
       <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;">
         Apply Now <i class="fa-solid fa-bars-staggered"></i> </button>
     </a>
   </section>
-  <ng-adsense style="display: none;" [adClient]="'ca-pub-7689491302137996'" [adSlot]="2302512209" [display]="'inline-block'" [width]="320"
-    [height]="108"></ng-adsense>
+  <ng-adsense style="display: none;" [adClient]="'ca-pub-7689491302137996'" [adSlot]="2302512209"
+    [display]="'inline-block'" [width]="320" [height]="108"></ng-adsense>
 
 </main>

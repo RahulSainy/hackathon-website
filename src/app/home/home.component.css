@@ -151,6 +151,46 @@ mat-sidenav {
 color: steelblue;
 }
   /* ------------------- prizez --------------------  */
+
+  .prize-container {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    flex-direction: column;
+  } 
+  .prize-container img{
+    width: 50%;
+    height: auto;
+    
+  }
+  .First-Prize{
+    margin-bottom: 10px;
+    animation: firstPrizeIn 5s ease-in-out;
+  }
+  @keyframes firstPrizeIn {
+    0% {
+      transform: translate(-100%, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }}
+
+    .Second-Prize{
+      margin-bottom: 10px;
+      animation: secondPrizeIn 5s ease-in-out;
+    }
+    @keyframes secondPrizeIn {
+      0% {
+        transform: translate(100%, 0);
+      }
+      100% {
+        transform: translate(0, 0);
+      }}
+  /* .prize-image {
+    max-width: 50%; 
+  } */
+  
+  
  .block-container {
   display: flex;
   justify-content: center;
@@ -315,7 +355,11 @@ color: steelblue;
     }
     .header-image{
       display: block;}
-}
+ 
+      .prize-container img{
+        width: 80%;
+      }
+        
+    }
 
-  
   
