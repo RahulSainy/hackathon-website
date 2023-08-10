@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ThemeDialogComponent } from './theme/theme-dialog.component';
 import { AdsenseModule } from 'ng2-adsense';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -28,6 +29,7 @@ import { AdsenseModule } from 'ng2-adsense';
     HeadnavComponent,
     AppComponent,
     AboutComponent,
+    ContactComponent,
     SponsorsComponent,
     ScheduleComponent,
     EventsComponent,
@@ -37,7 +39,7 @@ import { AdsenseModule } from 'ng2-adsense';
     ThemeDialogComponent
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,

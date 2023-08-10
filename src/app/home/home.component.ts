@@ -6,28 +6,7 @@ declare var gtag:any
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-   contacts = [
-    {
-      name: 'Abhay Pratap Singh',
-      phone: '86519 97455'
-    },
-    {
-      name: 'Awadhesh Choubey',
-      phone: '87090 38446'
-    },
-    {
-      name: 'Pratham Chaturvedi',
-      phone: '96854 43508'
-    },
-    {
-      name: 'Sahil Kumar Jha',
-      phone: '83494 29778'
-    },
-    {
-      name: 'Shivam Kumar',
-      phone: '97080 51582'
-    }
-  ];
+  
 
   days: number = 0;
   hours: number = 0;
