@@ -85,7 +85,7 @@ mat-sidenav {
   }
   
   iframe {
-    min-width: 85vw;
+    min-width: 50vw;
     height: 48vh;
     margin: 2% auto;
     border-radius: 15px;
@@ -134,14 +134,45 @@ mat-sidenav {
     display: none;
    width: 100%;
   }
-  /* ------------------------------------------------- */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-card {
+    /* margin: auto; */
+    width: 300px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
   
-  /* .footercontainer {
-    background-color: #fcfcfc4f;
-    color: #fff;
-    padding: 20px 0;
-  } */
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
   
+  .left-content h2 {
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #673AB7;
+    letter-spacing: 4.01px;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #673AB7;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .right-content img {
+    max-width: 100%;
+  }
   .nav-btn {
     padding: 16px;
     text-align: center;

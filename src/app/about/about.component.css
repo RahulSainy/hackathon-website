@@ -1,0 +1,13 @@
+.header h2 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #6EC1E400;
+    letter-spacing: 4.01px;
+    -webkit-text-stroke-width: 3px;
+    stroke-width: 11px;
+    -webkit-text-stroke-color: steelblue;
+    stroke: #ffffff;
+}

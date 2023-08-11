@@ -2,15 +2,41 @@
     <h2> Important Contacts</h2></div>
     <!-- Student Contacts -->
     <h2 class="contacts-title">Student Contacts</h2>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center custom-row">
+      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let contact of studentContacts1">
+        <mat-card class="contact-card">
+          <mat-card-content style="padding: 0;">
+            <div class="contact-content text-center">
+              <div class="img-div">
+
+                <img class="contact-image" src="{{contact.img}}" alt="{{contact.name}}">
+              </div>
+              <h3>{{contact.name}}</h3>
+              <p>{{contact.phone}}</p>
+              <a href="tel:{{contact.phone}}" class="call-button">
+              <button mat-raised-button>
+                Call
+                <mat-icon>call</mat-icon>
+              </button>
+              </a>
+            </div>
+          </mat-card-content>
+         
+        </mat-card>
+      </div>
+    </div>
+    <div class="row justify-content-center custom-row">
       <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let contact of studentContacts">
         <mat-card class="contact-card">
           <mat-card-content style="padding: 0;">
             <div class="contact-content text-center">
-              <img class="contact-image" src="{{contact.img}}" alt="{{contact.name}}">
+              <div class="img-div">
+
+                <img class="contact-image" src="{{contact.img}}" alt="{{contact.name}}">
+              </div>
               <h3>{{contact.name}}</h3>
               <p>{{contact.phone}}</p>
-              <a href="{{contact.phone}}" class="call-button">
+              <a href="tel:{{contact.phone}}" class="call-button">
               <button mat-raised-button>
                 Call
                 <mat-icon>call</mat-icon>
@@ -25,8 +51,9 @@
   
     <!-- Faculty Contacts -->
     <h2 class="contacts-title">Faculty Contacts</h2>
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let contact of facultyContacts">
+<div class="row justify-content-center custom-row">
+  <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let contact of facultyContacts">
+
         <mat-card class="contact-card">
           <mat-card-content style="padding: 0;">
             <div class="contact-content text-center">
