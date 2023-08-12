@@ -185,6 +185,7 @@ color: steelblue;
 
   .prize-container {
     display: flex;
+    margin: 5rem;
     /* justify-content: space-between;
     align-items: center; */
     flex-direction: column;
@@ -386,7 +387,10 @@ color: steelblue;
     }
     .header-image{
       display: block;}
- 
+ .prize-container{
+
+   margin: 0;
+ }
       .prize-container img{
         width: 80%;
       }

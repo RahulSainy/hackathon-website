@@ -74,7 +74,7 @@ display: none;
         max-width: 50%;
     }
     .contact-card {
-        margin: 5px; /* Reduce the margin for smaller screens */
+        padding: 0.5rem; /* Reduce the margin for smaller screens */
     }
   
 }

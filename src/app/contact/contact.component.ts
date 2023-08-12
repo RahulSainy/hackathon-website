@@ -42,24 +42,26 @@ export class ContactComponent {
 
   facultyContacts: any[] = [
     {
-      name: 'Prof. Parul Khatri',
-      phone: '79094 88778',
+      name: 'Dr. Shadab Pasha Khan',
+      phone: '98933 10510',
       img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
     },
+ 
    
     {
       name: 'Prof Swati Pandey',
       phone: '94253 78757',
       img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-employee-5748689-4800732.png'
     },
- {
-      name: 'Prof Nida Afreen Rizvi',
-      phone: '72240 97480',
-      img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
-    },
+
     {
       name: 'Prof. Sarika Khatarkar',
       phone: '96693 69912',
+      img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
+    },
+    {
+      name: 'Prof. Parul Khatri',
+      phone: '79094 88778',
       img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
     },
     {
@@ -68,14 +70,15 @@ export class ContactComponent {
       img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
     }, 
     {
+      name: 'Prof Nida Afreen Rizvi',
+      phone: '72240 97480',
+      img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
+    },
+    {
       name: 'Prof. Sana Khan',
       phone: '97552 52388',
       img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-employee-5748689-4800732.png'
     },
-    {
-      name: 'Dr. Shadab Pasha Khan',
-      phone: '98933 10510',
-      img: 'https://cdn3d.iconscout.com/3d/premium/thumb/male-student-7215499-5873311.png?f=webp'
-    },
+ 
   ];
 }

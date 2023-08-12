@@ -23,6 +23,8 @@
     background: var(--mat-standard-button-toggle-disabled-state-background-color);
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
+    max-width: 400px; 
+    margin: auto;
     
   }
   
