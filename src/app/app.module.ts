@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
 import { ThemeDialogComponent } from './theme/theme-dialog.component';
 import { AdsenseModule } from 'ng2-adsense';
 import { ContactComponent } from './contact/contact.component';
+import { ThemeDetailsComponent } from './theme/theme-details/theme-details.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -34,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
     ScheduleComponent,
     EventsComponent,
     ThemeComponent,
+    ThemeDetailsComponent,
     FaqComponent,
     ApplyComponent,
     ThemeDialogComponent

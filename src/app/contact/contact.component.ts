@@ -29,7 +29,7 @@ export class ContactComponent {
     {
       name: 'Pratham Chaturvedi',
       phone: '96854 43508',
-      img: 'https://i.ibb.co/7KQxwWy/aa4c7c33-bef1-4952-a778-5cc6239d1186-removebg-preview.png'
+      img: 'https://i.ibb.co/tYWwk0F/Pratham-Chaturvedi.png'
     },
     {
       name: 'Shivam Kumar',

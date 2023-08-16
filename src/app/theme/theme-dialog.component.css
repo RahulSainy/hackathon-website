@@ -1,16 +1,20 @@
 .mat-dialog-title {
-    margin-bottom: 10px;
-  }
-img{
-    width: 50%;
-    width: -webkit-fill-available;
+  margin-bottom: 10px;
 }
-  .mat-dialog-content {
-    border: 1px solid #ccc;
-  }
 
-  @media screen and (max-width: 600px) {
-    .mat-dialog-content {
-      max-width: 500px;
-    }
+img {
+  width: 50%;
+  width: -webkit-fill-available;
+  max-width: 50%;
+  margin: auto;
+}
+
+.mat-dialog-content {
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .mat-dialog-content {
+    max-width: 600px;
   }
+}

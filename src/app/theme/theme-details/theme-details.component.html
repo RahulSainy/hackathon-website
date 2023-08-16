@@ -1,0 +1,12 @@
+<div class="theme-details">
+    <h2>{{ theme.title }}</h2>
+    <img [src]="theme.imageUrl" [alt]="theme.title" class="theme-image">
+    <p>{{ theme.instructions }}</p>
+  
+    <!-- Add problem statements section here -->
+    <h3>Problem Statements</h3>
+    <ul>
+      <!-- Loop through problem statements if available -->
+      <li *ngFor="let problemStatement of theme.problemStatements">{{ problemStatement }}</li>
+    </ul>
+  </div>

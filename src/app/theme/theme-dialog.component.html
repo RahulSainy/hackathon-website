@@ -1,8 +1,11 @@
 <h2 mat-dialog-title>{{ theme.title }}</h2>
 <div mat-dialog-content>
-  <img [src]="theme.imageUrl" alt="{{ theme.title }}" style="max-width: 50%;">
-  <p><b>Problem Statement -</b>  Comming soon ...</p>
-  <p>{{ theme.instructions }}</p>
+  <img [src]="theme.imageUrl" alt="{{ theme.title }}" >
+  <ng-container *ngFor="let problem of theme.problemStatements">
+    <p><b>Problem Statement -</b> {{ problem.title }}</p>
+    <p><b>Objective:</b> {{ problem.objective }}</p>
+    <p>{{ problem.description }}</p>
+  </ng-container>
   <!-- Add more details here -->
 </div>
 <div mat-dialog-actions>
