@@ -21,7 +21,7 @@
         </div>
       </div>
       <br>
-      <p style="font-size: medium;">Organised by Department of IT, CSE, AIML, CSBS & CSDS
+      <p style="font-size: medium;">Organised by Department of IT, CSE, CSE-AIML, CSE-DS & CSBS 
         <br> Oriental Institute of Science & Technology, Bhopal
       </p>
     </div>
@@ -54,7 +54,9 @@
       <button mat-button routerLink="#theme" (click)="scrollToSection('theme')">
         <mat-icon matPrefix>tips_and_updates</mat-icon> Theme
       </button>
-
+      <button mat-button routerLink="#rules" (click)="scrollToSection('rules')">
+        <mat-icon matPrefix>assignment_late</mat-icon> Rules
+      </button>
       <button mat-button routerLink="#faq" (click)="scrollToSection('faq')">
         <mat-icon matPrefix>help_outline</mat-icon> FAQ
       </button>
@@ -74,6 +76,7 @@
       </button>
     </div>
   </div>
+
 
 
 
@@ -172,6 +175,14 @@
   <section id="theme">
     <app-theme></app-theme>
   </section>
+
+  <section id="rules" style="padding:20px 40px 30px 40px; ">
+    <div class="header" style="text-align: center">
+      <h2>Hackathon Rules</h2>
+      </div>
+    <app-rules-list></app-rules-list>
+  </section>
+
   <section id="contact">
     <app-contact></app-contact>
   </section>

@@ -86,11 +86,26 @@ export class ThemeComponent {
         {
           title: 'Smart Ecommerce Web App',
           objective: 'Create an Ecommerce Web app using Nextjs for a gift shop',
-          description: 'In general, you need to equip your e-commerce gift shop app with a set of features that facilitate the buyer’s journey, deliver a great user experience (UX), and ensure that making a purchase is smooth and easy. All in all, every feature of your shopping app should contribute to its primary goal: increasing gift sales, building customer loyalty, and giving business the competitive advantage it needs to thrive.'
+          description: ` In general, you need to equip your e-commerce gift shop app with a set of features
+          that facilitate the buyer’s journey, deliver a great user experience (UX), and ensure that making a
+          purchase is smooth and easy. All in all, every feature of your shopping app should contribute to its
+          primary goal: increasing gift sales, building customer loyalty, and giving business the competitive
+          advantage it needs to thrive.
+          Features Needed In the Web App: Easy login & registration, User-friendly product filtering and
+          sorting, Detailed product descriptions, Product gallery, Presenting your products with Augmented
+          Reality, Shopping cart, Multi Gifts Price Calculator and Ordering Form, Order summary, Secure and
+          easy in-app indian payment gateways and payments, Ordering an invoice and adding company data
+          Returns and checking the return status, Checking the shipping status, The number of items users are
+          seeing/left on the list, Checking item availability in specific locations, Item availability reminder,
+          Wishlist, Personalized Gift recommendations & item feeds, Membership options, Loyalty programs
+          ,Flash sales and discounts, Easy customer service access, Product scores and reviews, Barcode
+          scanning, integration with an online store, Personalized content.`
         },
         {
           title: 'Smart Parent -Student Monitoring Mobile App',
-          description: 'In general, you need to create a mobile app to ease parents to monitor child performance in training institutes, college, school. The parents can monitor attendance, exam results, assignments and quiz performance of his/her ward directly on the mobile application.'
+          description: `In general, you need to create a mobile app to ease parents to monitor child performance in training institutes, college, school. The parents can monitor attendance, exam results, assignments and quiz performance of his/her ward directly on the mobile application. Features: Multi Role Login (Admin, Teacher, Parents, Students). Admin can Manage users and roles.
+          Teacher can manage Attendance, Assignment, Quiz, Exams and award marks. Student can submit
+          quiz, and assignment and view reports. Parent can monitor his/her ward overall performance. `
         }
       ]
     }

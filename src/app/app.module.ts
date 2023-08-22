@@ -23,6 +23,8 @@ import { ThemeDialogComponent } from './theme/theme-dialog.component';
 import { AdsenseModule } from 'ng2-adsense';
 import { ContactComponent } from './contact/contact.component';
 import { ThemeDetailsComponent } from './theme/theme-details/theme-details.component';
+import { RulesListComponent } from './rules/rules-list/rules-list.component';
+import { PopupComponent } from './rules/popup/popup.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -38,7 +40,9 @@ import { ThemeDetailsComponent } from './theme/theme-details/theme-details.compo
     ThemeDetailsComponent,
     FaqComponent,
     ApplyComponent,
-    ThemeDialogComponent
+    ThemeDialogComponent,
+    RulesListComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
