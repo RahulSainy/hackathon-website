@@ -141,7 +141,7 @@ mat-sidenav {
   }
   .custom-card {
     /* margin: auto; */
-    width: 300px;
+    width: 600px;
     display: inline-block;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -151,7 +151,7 @@ mat-sidenav {
   .card-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 16px;
   }
   
@@ -403,7 +403,10 @@ color: steelblue;
          display: flex; 
          width: 100%;
      }
-        
+        .custom-card{
+          width: 400px;
+
+        }
     }
 
   

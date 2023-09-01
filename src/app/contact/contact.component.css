@@ -75,6 +75,8 @@ display: none;
     }
     .contact-card {
         padding: 0.5rem; /* Reduce the margin for smaller screens */
+        min-height: 90%;
+
     }
   
 }
