@@ -7,27 +7,32 @@ declare var gtag:any
 })
 export class HomeComponent implements OnInit{
   
-
+  registrationEnded: boolean = false;
   days: number = 0;
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
-  lastDate = new Date(2023, 9, 16)
+  lastDate = new Date(2023, 8, 21)
   ngOnInit() {
     // Target date: 25th September (Month is 0-based, so 8 means September)
-    const targetDate = new Date(2023, 8, 15).getTime();
+    const targetDate = new Date(2023, 8, 21).getTime();
 
     setInterval(() => {
       const now = new Date().getTime();
       const timeRemaining = targetDate - now;
-
-      this.days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-      this.hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      this.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      this.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      if (timeRemaining <= 0) {
+        // Registration has ended
+        this.registrationEnded = true;
+      } else {
+        this.days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        this.hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        this.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        this.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      }
     }, 1000);
   }
 
+     
   trackMe() {
     gtag('event', 'APPLY_BUTTON_CLICKED', {
     'event_category': 'BUTTON_CLICK',

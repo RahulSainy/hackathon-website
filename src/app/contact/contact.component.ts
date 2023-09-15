@@ -25,7 +25,26 @@ export class ContactComponent {
       img: 'https://i.ibb.co/yg83JXX/Ganesh-Mishra.png'
     },
 
-  ]
+
+    {
+      name: 'Shivam Kumar',
+      phone: '97080 51582',
+      img: 'https://i.ibb.co/b5Vs8xT/shivam-removebg-preview.png'
+    },
+    {
+      name: 'Pratham Chaturvedi',
+      phone: '96854 43508',
+      img: 'https://i.ibb.co/tYWwk0F/Pratham-Chaturvedi.png'
+    },
+    {
+      name: 'Abhay Pratap Singh',
+      phone: '86519 97455',
+
+      img: 'https://i.ibb.co/xCRDzPx/Abhay-Pratap-Singh-removebg-preview.png'
+    },
+
+
+  ];
   StudentGirls: any[] = [
     {
       name: 'Kratika Tiwari',
@@ -63,31 +82,19 @@ export class ContactComponent {
 
       img: 'https://i.ibb.co/QmL6pF6/Aditi-Sahu.png'
     },
+    {
+      name: 'Radhika Maheshwari',
+      phone: '',
+      img: 'https://i.ibb.co/9pV1Qgt/Radhika-Maheshwari.png'
+    },
+    {
+      name: 'Divyanshi Verma',
+      phone: '',
+      img: 'https://i.ibb.co/C9TX6qG/Divyanshi-Verma.png'
+
+     
+    },
   ]
-  studentContacts: any[] = [
-
-
-
-    {
-      name: 'Shivam Kumar',
-      phone: '97080 51582',
-      img: 'https://i.ibb.co/b5Vs8xT/shivam-removebg-preview.png'
-    },
-    {
-      name: 'Pratham Chaturvedi',
-      phone: '96854 43508',
-      img: 'https://i.ibb.co/tYWwk0F/Pratham-Chaturvedi.png'
-    },
-    {
-      name: 'Abhay Pratap Singh',
-      phone: '86519 97455',
-
-      img: 'https://i.ibb.co/xCRDzPx/Abhay-Pratap-Singh-removebg-preview.png'
-    },
-
-
-  ];
-
   facultyContacts: any[] = [
     {
       name: 'Dr. Shadab Pasha Khan',

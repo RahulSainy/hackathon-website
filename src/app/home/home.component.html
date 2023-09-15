@@ -39,18 +39,12 @@
   <div class="nav-btn">
     <div style="border-bottom: inset; border-top: outset; ">
 
-      <!-- <button mat-button routerLink="#sponsors" (click)="scrollToSection('sponsors')">
-         <mat-icon matPrefix>supervisor_account</mat-icon> Sponsors
-       </button> -->
 
       <button mat-button routerLink="#schedule" (click)="scrollToSection('schedule')">
         <mat-icon matPrefix>event</mat-icon> Schedule
       </button>
 
-      <!-- <button mat-button routerLink="events">
-         <mat-icon matPrefix>event_note</mat-icon> Events
-       </button>
-        -->
+    
       <button mat-button routerLink="#theme" (click)="scrollToSection('theme')">
         <mat-icon matPrefix>tips_and_updates</mat-icon> Theme
       </button>
@@ -64,9 +58,7 @@
       <button mat-button routerLink="#contact" (click)="scrollToSection('contact')">
         <mat-icon matPrefix>perm_contact_calendar </mat-icon> Contact
       </button>
-      <!-- <button mat-button routerLink="#apply" (click)="scrollToSection('apply')">
-        <mat-icon matPrefix>assignment_turned_in</mat-icon> Apply
-      </button> -->
+      
       <button mat-button routerLink="#venue" (click)="scrollToSection('venue')">
         <mat-icon matPrefix>share_location </mat-icon> Venue
       </button>
@@ -77,10 +69,19 @@
     </div>
   </div>
 
+  <mat-card *ngIf="registrationEnded" class="count-down-timer" style="text-align: center;">
+    <h1 style="color: rgb(223, 108, 108); margin: 0; "> <b>
+
+        Registration Ended <i class="fa-solid fa-hourglass-end"></i>
+      </b>
+    </h1>
+
+    <h2> Thankyou For You Participation and Interest</h2>
+
+  </mat-card>
 
 
-
-  <mat-card class="count-down-timer" style="text-align: center;">
+  <mat-card *ngIf="!registrationEnded" class="count-down-timer" style="text-align: center;">
     <h1 style="color: steelblue; margin: 0; "> <b>
 
         Register Before <i class="fa-solid fa-clock fa-spin"></i>
@@ -91,7 +92,7 @@
     <mat-card-content>
       <div class="wrapper">
         <h2>
-          Sep 15 2023
+          Sep 20 2023
         </h2>
         <div class="description">
           <p>{{ days }} <br>Days</p>
@@ -145,7 +146,7 @@
       <mat-card-title style="text-align: center;"> Simple rules to apply for Hackathon</mat-card-title>
 
       <mat-card-content>
-    
+
 
         <ul>
 
@@ -161,30 +162,31 @@
 
           </li>
         </ul>
-<p>
-        <b>
+        <p>
+          <b>
 
-          Preliminary Round
-        </b>
+            Preliminary Round
+          </b>
 
-        You have to develop code on your selected statement. Upload on drive.
-<br>
-        📌Round 1- Presentation of 30 minutes. Based on this selected teams goes to Round 2. Maximum teams goes to Round
-        2.
-<br>
-        📌Round 2- Challenge round, Modification or new module to be developed within 3 hour.
-<br>
-        Evaluation based on Round1+Round2 performance.
-<br>
+          You have to develop code on your selected statement. Upload on drive.
+          <br>
+          📌Round 1- Presentation of 30 minutes. Based on this selected teams goes to Round 2. Maximum teams goes to
+          Round
+          2.
+          <br>
+          📌Round 2- Challenge round, Modification or new module to be developed within 3 hour.
+          <br>
+          Evaluation based on Round1+Round2 performance.
+          <br>
 
-        ✨ Up to maximum 5 members in a team.
-<br>
-        💫 Big opportunity for all students. 💫
+          ✨ Up to maximum 5 members in a team.
+          <br>
+          💫 Big opportunity for all students. 💫
 
         </p>
         <b>Last date to submit code - 3rd October 2023</b>
-        </mat-card-content>
-    <br>
+      </mat-card-content>
+      <br>
       <mat-card-title style="text-align: center;">Registration Amount</mat-card-title>
       <div class="card-content">
         <div class="left-content">
@@ -255,7 +257,7 @@
 
 
 
-  <section id="apply" class="apply">
+  <section *ngIf="!registrationEnded" id="apply" class="apply">
     <a href="https://forms.gle/HBkuoGdZKo5jxANfA" target="_top">
       <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;">
         Apply Now <i class="fa-solid fa-bars-staggered"></i> </button>
