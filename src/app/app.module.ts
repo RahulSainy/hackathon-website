@@ -25,6 +25,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ThemeDetailsComponent } from './theme/theme-details/theme-details.component';
 import { RulesListComponent } from './rules/rules-list/rules-list.component';
 import { PopupComponent } from './rules/popup/popup.component';
+import { ResultDialogComponent } from './results/result-dialog/result-dialog.component';
+import { ResultsComponent } from './results/results.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -42,7 +45,9 @@ import { PopupComponent } from './rules/popup/popup.component';
     ApplyComponent,
     ThemeDialogComponent,
     RulesListComponent,
-    PopupComponent
+    PopupComponent,
+    ResultsComponent,
+    ResultDialogComponent
   ],
   imports: [
     BrowserModule,
