@@ -27,7 +27,13 @@ import { RulesListComponent } from './rules/rules-list/rules-list.component';
 import { PopupComponent } from './rules/popup/popup.component';
 import { ResultDialogComponent } from './results/result-dialog/result-dialog.component';
 import { ResultsComponent } from './results/results.component';
+import { ResultsService } from './results/results.service';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat//database';
 
+import { initializeApp } from 'firebase/app';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -47,7 +53,7 @@ import { ResultsComponent } from './results/results.component';
     RulesListComponent,
     PopupComponent,
     ResultsComponent,
-    ResultDialogComponent
+    ResultDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,12 +63,15 @@ import { ResultsComponent } from './results/results.component';
     FormsModule,
     MaterialModule,
     HttpClientModule,
+    // AngularFireDatabaseModule,
     AdsenseModule.forRoot({
       adClient: 'ca-pub-7689491302137996',
     }),
-
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule, 
   ],
-  providers: [],
+  providers: [ResultsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

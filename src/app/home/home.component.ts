@@ -12,10 +12,10 @@ export class HomeComponent implements OnInit{
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
-  lastDate = new Date(2023, 8, 21)
+  lastDate = new Date(2023, 8, 26)
   ngOnInit() {
     // Target date: 25th September (Month is 0-based, so 8 means September)
-    const targetDate = new Date(2023, 8, 21).getTime();
+    const targetDate = new Date(2023, 8, 26).getTime();
 
     setInterval(() => {
       const now = new Date().getTime();
