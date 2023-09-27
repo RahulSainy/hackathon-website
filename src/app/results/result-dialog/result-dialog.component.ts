@@ -43,7 +43,15 @@ export class ResultDialogComponent{
       this.dataSource.paginator = this.paginator; // Attach paginator to the data source
     });
   }
-
+  applyFilter(event: any): void {
+    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
+  
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+  
   onClose(): void {
     this.dialogRef.close();
   }

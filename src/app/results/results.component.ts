@@ -13,7 +13,7 @@ export class ResultsComponent {
 
 openResultsDialog(): void {
     this.dialog.open(ResultDialogComponent, {
-      width: '600px',
+      width: '100vw',
       data: this.teams
     });
   }
