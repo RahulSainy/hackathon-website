@@ -12,7 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class ResultDialogComponent{
   Round = 'All';
-  displayedColumns: string[] = ['groupNumber', 'teamName', 'teamLeader', 'college'];
+  displayedColumns: string[] = ['groupNumber','teamLeader', 'college','problemStatement'];
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -28,13 +28,16 @@ export class ResultDialogComponent{
     this.loadDataFromFirebase();
   }
 
+  
+
+
   loadDataFromFirebase(): void {
     this.resultService.getAll().snapshotChanges().subscribe(data => {
       const transformedData = data.map(item => ({
-        groupNumber: item.key, // Use the group number as-is
-        teamName: item.payload.val()['Team Leader College Name'],
+        groupNumber: item.payload.val()['Group Number'], // Use the group number as-is
         teamLeader: item.payload.val()['Team Leader Name'],
         college: item.payload.val()['Team Leader College Name'],
+        problemStatement: item.payload.val()['Problem Statement'],
       }));
       this.dataSource.data = transformedData;
       this.dataSource.paginator = this.paginator; // Attach paginator to the data source
