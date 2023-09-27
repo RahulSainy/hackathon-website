@@ -1,0 +1,18 @@
+
+
+.apply-btn {
+    top: -10px;
+    padding: 2rem;
+    font-size: x-large;
+  }
+  
+@media screen and (max-width: 430px) {
+ 
+    .apply-btn {
+      padding: 1rem;
+      font-size: large;
+      top: -10px;}
+      .header h2{
+        font-size: x-large;
+      }
+    }

@@ -104,7 +104,7 @@
     </mat-card-content>
   </mat-card>
   <br>
-<app-results class="apply-btn"></app-results>
+<!-- <app-results class="apply-btn"></app-results> -->
 
   <div class="header">
     <h2>🏆 Prize 🏆</h2>
@@ -257,13 +257,21 @@
   <br>
 
 
+  <section  id="apply" class="apply">
+    
+      <!-- <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> -->
+      <app-results> </app-results>
+   
 
-  <section *ngIf="!registrationEnded" id="apply" class="apply">
+  </section>
+  
+  <!-- //// this works however to save compute commented  ---------  -->
+  <!-- <section *ngIf="!registrationEnded" id="apply" class="apply">
     <a href="https://forms.gle/HBkuoGdZKo5jxANfA" target="_top">
       <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;">
         Apply Now <i class="fa-solid fa-bars-staggered"></i> </button>
     </a>
-  </section>
+  </section> -->
 
   <section id="about-us">
     <app-about></app-about>

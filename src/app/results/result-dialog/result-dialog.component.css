@@ -1,0 +1,6 @@
+/* Add this to your CSS or style.scss */
+.table-container {
+    max-height: 500px; /* Adjust the height as needed */
+    overflow: auto; /* Enable vertical scrolling */
+  }
+  
