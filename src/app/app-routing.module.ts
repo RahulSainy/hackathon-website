@@ -8,16 +8,19 @@ import { ThemeComponent } from './theme/theme.component';
 import { FaqComponent } from './faq/faq.component';
 import { ApplyComponent } from './apply/apply.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './results/admin/admin.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'sponsors', component: SponsorsComponent },
-  { path: 'schedule', component: ScheduleComponent },
-  { path: 'events', component: EventsComponent },
-  { path: 'theme', component: ThemeComponent },
-  { path: 'faq', component: FaqComponent },
-  { path: 'apply', component: ApplyComponent },
+  { path: 'admin', component: AdminComponent },
+  
+  // { path: 'about', component: AboutComponent },
+  // { path: 'sponsors', component: SponsorsComponent },
+  // { path: 'schedule', component: ScheduleComponent },
+  // { path: 'events', component: EventsComponent },
+  // { path: 'theme', component: ThemeComponent },
+  // { path: 'faq', component: FaqComponent },
+  // { path: 'apply', component: ApplyComponent },
 ];
 
 

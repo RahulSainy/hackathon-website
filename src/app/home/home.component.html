@@ -44,7 +44,7 @@
         <mat-icon matPrefix>event</mat-icon> Schedule
       </button>
 
-    
+
       <button mat-button routerLink="#theme" (click)="scrollToSection('theme')">
         <mat-icon matPrefix>tips_and_updates</mat-icon> Theme
       </button>
@@ -58,7 +58,7 @@
       <button mat-button routerLink="#contact" (click)="scrollToSection('contact')">
         <mat-icon matPrefix>perm_contact_calendar </mat-icon> Contact
       </button>
-      
+
       <button mat-button routerLink="#venue" (click)="scrollToSection('venue')">
         <mat-icon matPrefix>share_location </mat-icon> Venue
       </button>
@@ -68,7 +68,16 @@
       </button>
     </div>
   </div>
+<section style="text-align: center;">
 
+  <h1 style="color: rgb(137, 65, 231)"> <b>
+    
+        Results <i class="fa-solid fa-hourglass-end"></i>
+      </b>
+    </h1>
+    <button mat-flat-button style="color: white; background-color: #386ed1; margin-right: 1rem;">Round 1</button>
+    <button mat-flat-button style="color: white; background-color: #F44336;">Winners</button>
+  </section>
   <mat-card *ngIf="registrationEnded" class="count-down-timer" style="text-align: center;">
     <h1 style="color: rgb(223, 108, 108); margin: 0; "> <b>
 
@@ -104,7 +113,7 @@
     </mat-card-content>
   </mat-card>
   <br>
-<!-- <app-results class="apply-btn"></app-results> -->
+  <!-- <app-results class="apply-btn"></app-results> -->
 
   <div class="header">
     <h2>🏆 Prize 🏆</h2>
@@ -257,14 +266,14 @@
   <br>
 
 
-  <section  id="apply" class="apply">
-    
-      <!-- <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> -->
-      <app-results> </app-results>
-   
+  <section id="apply" class="apply">
+
+    <!-- <button (click)="trackMe()" class="apply-btn" mat-raised-button style="color: white; background-color: #9c5dff;"> -->
+    <app-results> </app-results>
+
 
   </section>
-  
+
   <!-- //// this works however to save compute commented  ---------  -->
   <!-- <section *ngIf="!registrationEnded" id="apply" class="apply">
     <a href="https://forms.gle/HBkuoGdZKo5jxANfA" target="_top">
