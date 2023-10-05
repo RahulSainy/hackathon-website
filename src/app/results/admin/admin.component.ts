@@ -9,7 +9,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  displayedColumns: string[] = ['groupNumber','teamLeader', 'college','problemStatement', 'round1Actions'];
+  displayedColumns: string[] = ['groupNumber','teamLeader','problemStatement', 'round1Actions'];
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -45,20 +45,17 @@ export class AdminComponent {
     }
   }
 
-  addToRound1(team: any): void {
-    const groupNumber = team.groupNumber; // Use the correct property to access the team's groupNumber
-    this.resultsService.addToRound1(groupNumber).then(() => {
-      // Update the team's property to indicate it is in Round 1
-      team.round1 = true;
-    }).catch(error => {
-      console.error('Error adding to Round 1:', error);
-    });
+  addToRound1(element: any) {
+    element.round1 = true;
+    this.dataSource.data = this.dataSource.data.concat(element);
+
+    // Call the ResultsService to add the member to the Round 1 list in the database.
+    this.resultsService.addToRound1(element);
   }
-  
   removeFromRound1(team: any): void {
     const teamId = team.$key;
     this.resultsService.removeFromRound1(teamId).then(() => {
-      team.round1 = false;
+      team.round1 = "false";
     }).catch(error => {
       console.error('Error removing from Round 1:', error);
     });
