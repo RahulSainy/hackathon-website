@@ -9,7 +9,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  displayedColumns: string[] = ['groupNumber','teamLeader','problemStatement', 'round1Actions'];
+  displayedColumns: string[] = ['groupNumber','teamLeader','problemStatement', 'Round1'];
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -30,6 +30,7 @@ export class AdminComponent {
         teamLeader: item['Team Leader Name'],
         college: item['Team Leader College Name'],
         problemStatement: item['Problem Statement'],
+        Round1: item['Round1'],
       }));
       this.dataSource.data = transformedData;
       this.dataSource.paginator = this.paginator; // Attach paginator to the data source
@@ -44,20 +45,31 @@ export class AdminComponent {
       this.dataSource.paginator.firstPage();
     }
   }
-
   addToRound1(element: any) {
-    element.round1 = true;
-    this.dataSource.data = this.dataSource.data.concat(element);
-
-    // Call the ResultsService to add the member to the Round 1 list in the database.
-    this.resultsService.addToRound1(element);
+    const groupNumber = element.groupNumber; // Assuming 'groupNumber' is the unique identifier
+    this.resultsService.addToRound1(groupNumber)
+      .then(() => {
+        element.Round1 = true;
+        // Update the dataSource data to reflect the change
+        
+        // this.dataSource.data = [...this.dataSource.data];
+      })
+      .catch(error => {
+        console.error('Error adding to Round 1:', error);
+      });
   }
-  removeFromRound1(team: any): void {
-    const teamId = team.$key;
-    this.resultsService.removeFromRound1(teamId).then(() => {
-      team.round1 = "false";
-    }).catch(error => {
-      console.error('Error removing from Round 1:', error);
-    });
+  
+  
+  removeFromRound1(element: any) {
+    const groupNumber = element.groupNumber; // Assuming 'groupNumber' is the unique identifier
+    this.resultsService.removeFromRound1(groupNumber) // Call removeFromRound1 here
+      .then(() => {
+        element.Round1 = false;
+        // Update the dataSource data to reflect the change
+        // this.dataSource.data = [...this.dataSource.data];
+      })
+      .catch(error => {
+        console.error('Error removing from Round 1:', error);
+      });
   }
 }

@@ -19,17 +19,26 @@ export class ResultsService {
     return this.teamsRef.valueChanges();
   }
   addToRound1(groupNumber: string): Promise<void> {
-    console.log(groupNumber)
-    console.log(this.db.object('/teams/0'))
     const teamItemRef = this.db.object(`${this.dbPath}/${groupNumber}`);
-    console.log(teamItemRef)
-    return teamItemRef.update({ round1: true });
+    return teamItemRef.update({ Round1: true })
+      .then(() => {
+        console.log('Successfully added to Round 1');
+      })
+      .catch(error => {
+        console.error('Error adding to Round 1:', error);
+      });
   }
-  removeFromRound1(teamId: string): Promise<void> {
-    const teamItemRef = this.db.object(`${this.dbPath}/${teamId}`);
-    console.log("Remove",teamId)
-    return teamItemRef.update({ round1: false });
+  
+  
+  removeFromRound1(groupNumber: string): Promise<void> {
+    const teamItemRef = this.db.object(`${this.dbPath}/${groupNumber}`);
+    return teamItemRef.update({ Round1: false })
+      .then(() => {
+        console.log('Successfully added to Round 1');
+      })
+      .catch(error => {
+        console.error('Error adding to Round 1:', error);
+      });
   }
- 
 
 }

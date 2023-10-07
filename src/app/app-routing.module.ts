@@ -12,7 +12,7 @@ import { AdminComponent } from './results/admin/admin.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'admin', component: AdminComponent },
+  { path: 'admin@BRINDUSTIRES', component: AdminComponent },
   
   // { path: 'about', component: AboutComponent },
   // { path: 'sponsors', component: SponsorsComponent },
