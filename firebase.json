@@ -1,8 +1,16 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
   "hosting": {
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Request-Source",
+            "value": "oisthackathon"
+          }
+        ]
+      }
+    ],
     "public": "dist/hackathon-website",
     "ignore": [
       "firebase.json",

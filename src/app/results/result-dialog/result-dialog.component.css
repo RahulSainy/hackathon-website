@@ -3,12 +3,11 @@
     max-height: 500px; /* Adjust the height as needed */
     overflow: auto; /* Enable vertical scrolling */
   }
-  .result-dialog-container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 100%;
-  }
+ .result-dialog-container {
+  max-height: 500px;
+  overflow: auto;
+}
+
   
   .mat-toolbar {
     display: flex;
@@ -59,4 +58,24 @@
     &::placeholder {
       color: #999; /* Placeholder text color */
     }
+  }
+  
+  .mat-table {
+    border: 1px solid var(--border-color);
+  }
+  
+  .mat-header-cell,
+  .mat-cell {
+    border-bottom: 1px solid var(--border-color);
+  }
+  .coming-soon-message {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  /* Style for the "Coming Soon" message text */
+  .coming-soon-message p {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #888; /* Adjust the text color as needed */
+    font-weight: bold;
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ResultDialogComponent } from '../results/result-dialog/result-dialog.component';
 declare var gtag:any
 @Component({
   selector: 'app-home',
@@ -6,7 +8,8 @@ declare var gtag:any
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-  
+  data = "Round1"
+  constructor(public dialog: MatDialog){}
   registrationEnded: boolean = false;
   days: number = 0;
   hours: number = 0;
@@ -44,5 +47,11 @@ export class HomeComponent implements OnInit{
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+  openResultsDialogRound1(): void {
+    this.dialog.open(ResultDialogComponent, {
+      width: '100vw',
+      data: { Round: 'Round1' }
+    });
   }
 }

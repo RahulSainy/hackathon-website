@@ -1,4 +1,4 @@
-import { Component,Inject, ViewChild } from '@angular/core';
+import { Component, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ResultsService } from '../results.service';
 import { map } from 'rxjs/operators';
@@ -12,9 +12,8 @@ import { ResultsComponent } from '../results.component';
   templateUrl: './result-dialog.component.html',
   styleUrls: ['./result-dialog.component.css']
 })
-export class ResultDialogComponent{
-  Round = 'All';
-  displayedColumns: string[] = ['groupNumber','teamLeader', 'college','problemStatement'];
+export class ResultDialogComponent {
+  displayedColumns: string[] = ['groupNumber', 'teamLeader', 'college', 'problemStatement'];
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -29,24 +28,30 @@ export class ResultDialogComponent{
   ngOnInit(): void {
     this.loadDataFromFirebase();
   }
-
   loadDataFromFirebase(): void {
     this.resultService.getAll().subscribe((data: any[]) => {
       // Map the data to match property names with spaces
       const transformedData = data.map(item => ({
-        groupNumber: item['Group Number'], // Access properties with spaces using bracket notation
+        groupNumber: item['Group Number'],
         teamName: item['Team Name'],
         teamLeader: item['Team Leader Name'],
         college: item['Team Leader College Name'],
         problemStatement: item['Problem Statement'],
+        round1: item['Round1'], // Add round1 property to filter on
       }));
-  
-      this.dataSource.data = transformedData;
-      this.dataSource.paginator = this.paginator; // Attach paginator to the data source
+
+      // Filter data based on the 'Round' value
+      if (this.theme.Round === 'All') {
+        this.dataSource.data = transformedData; // Show all participants
+      } else if (this.theme.Round === 'Round1') {
+        this.dataSource.data = transformedData.filter(item => item.round1 === true); // Show Round 1 participants
+      }
+
+      this.dataSource.paginator = this.paginator;
     });
   }
-  
-  
+
+
   applyFilter(event: any): void {
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
     this.dataSource.filter = filterValue;

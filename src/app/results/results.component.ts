@@ -9,12 +9,12 @@ import { ResultDialogComponent } from './result-dialog/result-dialog.component';
 })
 export class ResultsComponent {
   constructor(public dialog: MatDialog) { }
-  teams = []
+
 
 openResultsDialog(): void {
     this.dialog.open(ResultDialogComponent, {
       width: '100vw',
-      data: this.teams
+      data: { Round: 'All' }
     });
   }
 }

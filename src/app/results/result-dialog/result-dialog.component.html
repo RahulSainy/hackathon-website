@@ -1,45 +1,41 @@
 <section>
   <mat-toolbar color="warn">
-    <span class="title">{{ Round }} Results</span>
+    <span class="title">{{ this.theme.Round }} Teams</span>
     <button mat-icon-button class="close-button" (click)="onClose()">
       <mat-icon>close</mat-icon>
     </button>
   </mat-toolbar>
 
-  <!-- Filter Inputs -->
   <mat-form-field class="filter-input" appearance="outline">
     <input matInput (keyup)="applyFilter($event)" placeholder="Search in list">
 <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
 
-  <div class="table-container">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-
-      <!-- Group Number Column -->
+  <div *ngIf="dataSource.data.length === 0" class="coming-soon-message">
+    <p>Announcing Soon</p>
+  </div>
+  <div class="table-container" style="max-height: 500px; overflow: auto;">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" *ngIf="dataSource.data.length > 0">
       <ng-container matColumnDef="groupNumber">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
         <td mat-cell *matCellDef="let element">{{ element.groupNumber }}</td>
       </ng-container>
 
 
-      <!-- Team Name Column -->
       <ng-container matColumnDef="teamName">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Team Name</th>
         <td mat-cell *matCellDef="let element">{{ element.teamName }}</td>
       </ng-container>
 
-      <!-- Team Leader Column -->
       <ng-container matColumnDef="teamLeader">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Team Leader</th>
         <td mat-cell *matCellDef="let element">{{ element.teamLeader }}</td>
       </ng-container>
 
-      <!-- College Column -->
       <ng-container matColumnDef="college">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>College</th>
         <td mat-cell *matCellDef="let element">{{ element.college }}</td>
       </ng-container>
-    <!-- Problem Statement  Column -->
     <ng-container matColumnDef="problemStatement">
       <th mat-header-cell *matHeaderCellDef>Problem Statement</th>
       <td mat-cell *matCellDef="let element">{{ element.problemStatement }}</td>
