@@ -1,7 +1,7 @@
 <section class="responsive-table">
   <!-- Mat-Toolbar (optional) -->
   <mat-toolbar color="warn">
-      <span class="title">Results</span>
+      <span class="title">Add To Round 1</span>
     
   </mat-toolbar>
 
@@ -35,13 +35,13 @@
 
           <!-- Round 1 Actions Column -->
           <ng-container matColumnDef="Round1">
-              <th mat-header-cell *matHeaderCellDef>Round1</th>
+              <th mat-header-cell *matHeaderCellDef>Round1 Action</th>
               <td mat-cell *matCellDef="let element">
                   <button class="action-button" mat-raised-button color="primary" (click)="addToRound1(element)" *ngIf="!element.Round1">
-                      Add to Round 1
+                      Add
                   </button>
                   <button class="action-button" mat-raised-button color="warn" (click)="removeFromRound1(element)" *ngIf="element.Round1">
-                      Remove from Round 1
+                      Remove
                   </button>
               </td>
           </ng-container>

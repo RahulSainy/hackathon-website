@@ -50,7 +50,11 @@ export class HomeComponent implements OnInit{
   }
   openResultsDialogRound1(): void {
     this.dialog.open(ResultDialogComponent, {
-      width: '100vw',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      height: '100%',
+      width: '100%',
+      panelClass: 'full-screen-modal',
       data: { Round: 'Round1' }
     });
   }

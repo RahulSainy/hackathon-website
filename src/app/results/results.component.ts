@@ -13,7 +13,11 @@ export class ResultsComponent {
 
 openResultsDialog(): void {
     this.dialog.open(ResultDialogComponent, {
-      width: '100vw',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      height: '90%',
+      width: '100%',
+      panelClass: 'full-screen-modal',
       data: { Round: 'All' }
     });
   }

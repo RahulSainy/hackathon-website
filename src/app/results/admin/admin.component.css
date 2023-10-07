@@ -46,7 +46,7 @@
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens here */
     .action-button {
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px 10px;
     }
 }
