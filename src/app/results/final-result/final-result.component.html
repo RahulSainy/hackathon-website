@@ -1,0 +1,14 @@
+
+
+<mat-card class="winner-card" *ngFor="let titleWinner of titleWinners"  >
+    <mat-card-header class="winner-card-header">
+    </mat-card-header>
+    <mat-card-title style="text-align: center;">{{ titleWinner.title }}</mat-card-title>
+    <mat-card-content class="winner-card-content">
+        <img src="{{ titleWinner.imageURL }}" alt="{{ titleWinner.title }}" class="winner-image" />
+        <p><strong>Group No:</strong> {{ titleWinner.groupNo }}</p>
+      <p><strong>Team Leader:</strong> {{ titleWinner.teamLeaderName }}</p>
+      <p><strong>College:</strong> {{ titleWinner.college }}</p>
+      <p><strong>Problem Statement:</strong> {{ titleWinner.problemStatement }}</p>
+    </mat-card-content>
+  </mat-card>

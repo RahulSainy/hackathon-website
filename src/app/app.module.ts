@@ -35,6 +35,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat//database';
 import { initializeApp } from 'firebase/app';
 import { environment } from '../environments/environment';
 import { AdminComponent } from './results/admin/admin.component';
+import { FinalResultComponent } from './results/final-result/final-result.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -55,7 +56,8 @@ import { AdminComponent } from './results/admin/admin.component';
     PopupComponent,
     ResultsComponent,
     ResultDialogComponent,
-    AdminComponent
+    AdminComponent,
+    FinalResultComponent,
   ],
   imports: [
     BrowserModule,
