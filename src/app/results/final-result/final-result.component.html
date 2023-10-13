@@ -1,14 +1,28 @@
 
-
-<mat-card class="winner-card" *ngFor="let titleWinner of titleWinners"  >
-    <mat-card-header class="winner-card-header">
-    </mat-card-header>
-    <mat-card-title style="text-align: center;">{{ titleWinner.title }}</mat-card-title>
-    <mat-card-content class="winner-card-content">
-        <img src="{{ titleWinner.imageURL }}" alt="{{ titleWinner.title }}" class="winner-image" />
-        <p><strong>Group No:</strong> {{ titleWinner.groupNo }}</p>
+<mat-card  class="winner-card"  *ngFor="let Winner of Winners"  >
+  <mat-card-header class="winner-card-header">
+    <mat-card-title style="text-align: center;">{{ Winner.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="title-card-content">
+      <img src="{{ Winner.imageURL }}" alt="{{ Winner.title }}" class="title-image" />
+      <p><strong>Group No:</strong> {{ Winner.groupNo }}</p>
+    <p><strong>Team Leader:</strong> {{ Winner.teamLeaderName }}</p>
+    <p><strong>College:</strong> {{ Winner.college }}</p>
+    <p><strong>Problem Statement:</strong> {{ Winner.problemStatement }}</p>
+  </mat-card-content>
+</mat-card>
+<br>
+<mat-card class="title-card" *ngFor="let titleWinner of titleWinners">
+  <mat-card-header class="title-card-header">
+    <div class="title-header-text">{{ titleWinner.title }}</div>
+  </mat-card-header>
+  <mat-card-content class="title-card-content">
+    <img src="{{ titleWinner.imageURL }}" alt="{{ titleWinner.title }}" class="title-image" />
+    <div class="title-info">
+      <p><strong>Group Number:</strong> {{ titleWinner.groupNo }}</p>
       <p><strong>Team Leader:</strong> {{ titleWinner.teamLeaderName }}</p>
       <p><strong>College:</strong> {{ titleWinner.college }}</p>
       <p><strong>Problem Statement:</strong> {{ titleWinner.problemStatement }}</p>
-    </mat-card-content>
-  </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>

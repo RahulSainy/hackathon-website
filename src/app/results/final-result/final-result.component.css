@@ -1,51 +1,134 @@
 .winner-card {
-    width: 300px; /* Set a fixed width for the cards */
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-  }
+  width: 60%;
+  /* Set a fixed width for the cards */
+  margin: 10px auto;
+  /* display: inline-block; */
+  vertical-align: top;
+  border: 1px solid #ccc;
+  /* Added a border to separate the cards */
+  border-radius: 8px;
+  /* Rounded the corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Added a subtle box-shadow for depth */
+}
 
-  .winner-card-header {
-    background-color: #1976D2; /* Set a background color for the header */
-    color: #fff; /* Text color for the header */
-  }
-  .winner-image {
-    max-width: 100%; /* Make the image responsive, scaling within its container */
-    height: auto;
-    display: block; /* Remove any potential extra spacing */
-    margin: 0 auto; /* Center-align the image horizontally */
-  }
-  
-  .winner-card-content {
-    padding: 16px; /* Add some padding to the content area */
-  }
+.winner-card-header {
+  background-color: #dfa019;
+  /* Set a background color for the header */
+  color: #fff;
+  /* Text color for the header */
+  padding: 12px;
+  /* Added padding to the header */
+  place-content: center;
+  border-top-left-radius: 8px;
+  /* Matched the border radius for a seamless look */
+  border-top-right-radius: 8px;
+}
 
+.title-card-content {
+  padding: 16px;
+  font-family: 'Arial', sans-serif; /* Change the font family to 'Arial' or any desired font */
+}
 
+.title-card {
+  width: 46%;
+  /* Set a fixed width for the cards */
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  /* Added a border to separate the cards */
+  border-radius: 8px;
+  /* Rounded the corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Added a subtle box-shadow for depth */
+
+}
+
+.title-card-header {
+  background-color: #1976D2;
+  /* Set a background color for the header */
+  color: #fff;
+  /* Text color for the header */
+  padding: 12px;
+  /* Added padding to the header */
+  place-content: center;
+  border-top-left-radius: 8px;
+  /* Matched the border radius for a seamless look */
+  border-top-right-radius: 8px;
+}
+
+.title-header-text {
+  text-align: center;
+  /* Centered the title text */
+  font-size: 20px;
+  /* Adjusted the font size for better readability */
+}
+.title-details {
+  margin-top: 12px;
+  font-size: 14px; /* Adjust the font size for better readability */
+}
+.title-details p {
+  margin-bottom: 8px; /* Add some space between each detail */
+}
+
+.title-image {
+  max-width: 100%;
+  /* Make the image responsive, scaling within its container */
+  height: auto;
+  display: block;
+  /* Remove any potential extra spacing */
+  margin: 0 auto;
+  /* Center-align the image horizontally */
+
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the container */
+  border-bottom-left-radius: 8px;
+  /* Matched the border radius for a seamless look */
+  border-bottom-right-radius: 8px;
+}
+
+.title-card-content {
+  padding: 16px;
+  /* Add some padding to the content area */
+}
+
+.title-info {
+  margin-top: 12px;
+  /* Added margin for separation from the image */
+}
 
 /* Media query for responsiveness on smaller screens */
 @media (max-width: 600px) {
-    .winner-card {
-      width: 100%; /* Cards take full width on smaller screens */
-    }
+  .title-card {
+    width: 100%;
+    /* Cards take full width on smaller screens */
+    margin: 10px auto;
   }
 
+  .winner-card {
+    width: 100%;
+    /* Set a fixed width for the cards */
+  }
+}
 
-  .gradient-blue {
-    background: linear-gradient(to bottom, #1976D2, #2196F3);
-  }
-  
-  .gradient-red {
-    background: linear-gradient(to bottom, #E91E63, #F44336);
-  }
-  
-  .gradient-green {
-    background: linear-gradient(to bottom, #4CAF50, #8BC34A);
-  }
-  
-  .gradient-purple {
-    background: linear-gradient(to bottom, #9C27B0, #673AB7);
-  }
-  
-  .gradient-orange {
-    background: linear-gradient(to bottom, #FF9800, #FFC107);
-  }
+
+.gradient-blue {
+  background: linear-gradient(to bottom, #1976D2, #2196F3);
+}
+
+.gradient-red {
+  background: linear-gradient(to bottom, #E91E63, #F44336);
+}
+
+.gradient-green {
+  background: linear-gradient(to bottom, #4CAF50, #8BC34A);
+}
+
+.gradient-purple {
+  background: linear-gradient(to bottom, #9C27B0, #673AB7);
+}
+
+.gradient-orange {
+  background: linear-gradient(to bottom, #FF9800, #FFC107);
+}

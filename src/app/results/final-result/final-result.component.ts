@@ -6,11 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./final-result.component.css']
 })
 export class FinalResultComponent {
-
+  Winners=[
+    {
+      title:"First Prize ₹ 51,000 ",
+      "groupNo":"G0",
+      "teamLeaderName": "Albus Dumbledore",
+      "college": "Hogwarts School of Witchcraft and Wizardry",
+      "problemStatement": "To develop a new type of spell that can protect people from harm.",
+      
+  "imageURL":"https://i.ibb.co/RjDPpyc/Best-Performer-Round-1.png"
+    },
+     {
+    title:"Second Prize ₹ 21,000 ",
+    "groupNo":"G0",
+    "teamLeaderName": "Albus Dumbledore",
+    "college": "Hogwarts School of Witchcraft and Wizardry",
+    "problemStatement": "To develop a new type of spell that can protect people from harm.",
+    
+"imageURL":"https://i.ibb.co/RjDPpyc/Best-Performer-Round-1.png"
+  },
+  ]
 titleWinners =  [
   {
     title:"Best Performer Round 1",
-    "groupNo":"G1",
+    "groupNo":"G0",
     "teamLeaderName": "Albus Dumbledore",
     "college": "Hogwarts School of Witchcraft and Wizardry",
     "problemStatement": "To develop a new type of spell that can protect people from harm.",
@@ -19,7 +38,7 @@ titleWinners =  [
   },
   {
     title:"Best Performer Round 2",
-    "groupNo":"G1",
+    "groupNo":"G0",
     "teamLeaderName": "Minerva McGonagall",
     "college": "Hogwarts School of Witchcraft and Wizardry",
     "problemStatement": "To develop a new type of potion that can cure diseases and injuries.",
@@ -27,7 +46,7 @@ titleWinners =  [
   },
 {
   title:"Best Demonstration",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "John Doe",
       "college": "University of California, Berkeley",
       "problemStatement": "To develop a new type of solar cell that is more efficient and affordable.",
@@ -35,7 +54,7 @@ titleWinners =  [
     },
     {
       title:"Best Co-ordination",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Jane Doe",
       "college": "Stanford University",
       "problemStatement": "To develop a new type of robot that can assist with disaster relief efforts.",
@@ -43,7 +62,7 @@ titleWinners =  [
     },
     {
       title:"Best Innovative Project",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Peter Parker",
       "college": "Massachusetts Institute of Technology",
       "problemStatement": "To develop a new type of prosthetic limb that is more comfortable and functional.",
@@ -51,7 +70,7 @@ titleWinners =  [
     },
     {
       title:"Best Presentation",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Mary Jane Watson",
       "college": "Columbia University",
       "problemStatement": "To develop a new type of educational software that is more engaging and effective.",
@@ -59,7 +78,7 @@ titleWinners =  [
     },
     {
       title:"Best Implementation",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Harry Potter",
       "college": "Harvard University",
       "problemStatement": "To develop a new type of medical device that can diagnose and treat diseases more effectively.",
@@ -67,7 +86,7 @@ titleWinners =  [
     },
     {
       title:"Most Wide Range Usable Project",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Hermione Granger",
       "college": "Yale University",
       "problemStatement": "To develop a new type of renewable energy source that is more efficient and environmentally friendly.",
@@ -75,7 +94,7 @@ titleWinners =  [
     },
     {
       title:"Best Project for Financial Enhancement",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Ron Weasley",
       "college": "Princeton University",
       "problemStatement": "To develop a new type of financial product that can help people save and invest more effectively.",
@@ -84,7 +103,7 @@ titleWinners =  [
 
     {
       title:"Best Explanation of Project",
-      "groupNo":"G1",
+      "groupNo":"G0",
       "teamLeaderName": "Severus Snape",
       "college": "Hogwarts School of Witchcraft and Wizardry",
       "problemStatement": "To develop a new type of magical artifact that can improve the lives of people.",
