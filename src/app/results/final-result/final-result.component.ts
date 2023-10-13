@@ -14,7 +14,7 @@ export class FinalResultComponent {
       "college": "Hogwarts School of Witchcraft and Wizardry",
       "problemStatement": "To develop a new type of spell that can protect people from harm.",
       
-  "imageURL":"https://i.ibb.co/RjDPpyc/Best-Performer-Round-1.png"
+  "imageURL":"https://i.ibb.co/pQ563NF/First-Prize.png"
     },
      {
     title:"Second Prize ₹ 21,000 ",
@@ -23,7 +23,7 @@ export class FinalResultComponent {
     "college": "Hogwarts School of Witchcraft and Wizardry",
     "problemStatement": "To develop a new type of spell that can protect people from harm.",
     
-"imageURL":"https://i.ibb.co/RjDPpyc/Best-Performer-Round-1.png"
+"imageURL":"https://i.ibb.co/kStK5rp/Second-Prize.png"
   },
   ]
 titleWinners =  [
@@ -34,7 +34,7 @@ titleWinners =  [
     "college": "Hogwarts School of Witchcraft and Wizardry",
     "problemStatement": "To develop a new type of spell that can protect people from harm.",
     
-"imageURL":"https://i.ibb.co/RjDPpyc/Best-Performer-Round-1.png"
+"imageURL":"https://i.ibb.co/7SYHssD/Best-Performer-Round-1.png"
   },
   {
     title:"Best Performer Round 2",
@@ -42,7 +42,7 @@ titleWinners =  [
     "teamLeaderName": "Minerva McGonagall",
     "college": "Hogwarts School of Witchcraft and Wizardry",
     "problemStatement": "To develop a new type of potion that can cure diseases and injuries.",
-"imageURL":"https://i.ibb.co/nryrkTC/Best-Performer-Round-2.png"
+"imageURL":"https://i.ibb.co/KLsB0bP/Best-Performer-Round-2.png"
   },
 {
   title:"Best Demonstration",
@@ -50,7 +50,7 @@ titleWinners =  [
       "teamLeaderName": "John Doe",
       "college": "University of California, Berkeley",
       "problemStatement": "To develop a new type of solar cell that is more efficient and affordable.",
-  "imageURL":"https://i.ibb.co/gPtcBWP/Best-Demonstration.png"
+  "imageURL":"https://i.ibb.co/kDXLK2g/Best-Demonstration.png"
     },
     {
       title:"Best Co-ordination",
@@ -58,7 +58,7 @@ titleWinners =  [
       "teamLeaderName": "Jane Doe",
       "college": "Stanford University",
       "problemStatement": "To develop a new type of robot that can assist with disaster relief efforts.",
-  "imageURL":"https://i.ibb.co/NChWBG3/Best-Co-ordination.png"
+  "imageURL":"https://i.ibb.co/jwvHzrF/Best-Co-ordination.png"
     },
     {
       title:"Best Innovative Project",
@@ -66,7 +66,7 @@ titleWinners =  [
       "teamLeaderName": "Peter Parker",
       "college": "Massachusetts Institute of Technology",
       "problemStatement": "To develop a new type of prosthetic limb that is more comfortable and functional.",
-  "imageURL":"https://i.ibb.co/f8QnTvd/Best-Innovative-Project.png"
+  "imageURL":"https://i.ibb.co/4KZsnJ8/Best-Innovative-Project.png"
     },
     {
       title:"Best Presentation",
@@ -74,7 +74,7 @@ titleWinners =  [
       "teamLeaderName": "Mary Jane Watson",
       "college": "Columbia University",
       "problemStatement": "To develop a new type of educational software that is more engaging and effective.",
-  "imageURL":"https://i.ibb.co/t8YjzQM/Best-Presentation.png"
+  "imageURL":"https://i.ibb.co/5RBfPdG/Best-Presentation.png"
     },
     {
       title:"Best Implementation",
@@ -82,7 +82,7 @@ titleWinners =  [
       "teamLeaderName": "Harry Potter",
       "college": "Harvard University",
       "problemStatement": "To develop a new type of medical device that can diagnose and treat diseases more effectively.",
-  "imageURL":"https://i.ibb.co/L6NHdw8/Best-Implementation.png"
+  "imageURL":"https://i.ibb.co/W2h5V9h/Best-Implementation.png"
     },
     {
       title:"Most Wide Range Usable Project",
@@ -90,7 +90,7 @@ titleWinners =  [
       "teamLeaderName": "Hermione Granger",
       "college": "Yale University",
       "problemStatement": "To develop a new type of renewable energy source that is more efficient and environmentally friendly.",
-  "imageURL":"https://i.ibb.co/BHJc8VR/Most-Wide-Range-Usable-Project.png"
+  "imageURL":"https://i.ibb.co/7RR0Z0q/Most-Wide-Range-Usable-Project.png"
     },
     {
       title:"Best Project for Financial Enhancement",
@@ -98,7 +98,7 @@ titleWinners =  [
       "teamLeaderName": "Ron Weasley",
       "college": "Princeton University",
       "problemStatement": "To develop a new type of financial product that can help people save and invest more effectively.",
-  "imageURL":"https://i.ibb.co/b5V10HY/Best-Project-for-Financial-Enhancement.png"
+  "imageURL":"https://i.ibb.co/NNMnqTY/Best-Project-for-Financial-Enhancement.png"
     },
 
     {
@@ -107,7 +107,7 @@ titleWinners =  [
       "teamLeaderName": "Severus Snape",
       "college": "Hogwarts School of Witchcraft and Wizardry",
       "problemStatement": "To develop a new type of magical artifact that can improve the lives of people.",
-      "imageURL":"https://i.ibb.co/9HtyjvJ/Best-Explanation-of-Project.png"
+      "imageURL":"https://i.ibb.co/MCJY12j/Best-Explanation-of-Project.png"
     }
 ];
 

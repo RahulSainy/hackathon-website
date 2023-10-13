@@ -9,11 +9,12 @@ import { FaqComponent } from './faq/faq.component';
 import { ApplyComponent } from './apply/apply.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './results/admin/admin.component';
+import { FinalResultComponent } from './results/final-result/final-result.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'admin@BRINDUSTRIES', component: AdminComponent },
-  
+  { path: 'winners', component: FinalResultComponent },
   // { path: 'about', component: AboutComponent },
   // { path: 'sponsors', component: SponsorsComponent },
   // { path: 'schedule', component: ScheduleComponent },
